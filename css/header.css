@@ -1,0 +1,226 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header__top {
+    justify-content: space-between;
+    padding-inline-end: 1em;
+    line-height: 2.5;
+    background-color: #B69352;
+}
+
+.header__top__left {
+    background-color: #D9DBDF;
+    flex: 1;
+    padding-inline-start: 1em;
+    height: 100%;
+}
+
+.header__top__right {
+    position: relative;
+    padding-inline-start: 1em;
+}
+
+.header__top__right::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    border: 1.25em solid;
+    border-color: transparent;
+    border-right-color: #B69352;
+    border-bottom-color: #B69352;
+
+}
+.header__top__right a {
+    text-decoration: none;
+    color: black;
+}
+.header__center {
+    position: relative;
+    color: white;
+    background-color: #404960;
+    justify-content: space-between;
+    padding: 0.5em max(1em, 5vw);
+}
+
+.header__center a {
+    color: #E3E3E3;
+    text-decoration: none;
+}
+
+.header__center button {
+    background-color: transparent;
+    border: none;
+    color: #E3E3E3;
+    cursor: pointer;
+}
+
+.image_icon {
+    width: 1.2em;
+    flex-shrink: 0;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_logo>img {
+    width: 6em;
+}
+
+.header_logo__text {
+    margin-top: -1em;
+    color: #B69352;
+}
+
+
+.header__center__bottom {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1em;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+}
+.header__center__bottom.show {
+    opacity: 1;
+    pointer-events: initial;
+}
+.header__center__bottom::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #E3E3E3;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: scale(0.7);
+}
+.header__center__searchbar {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    line-height: 1.2;
+    padding: 1em 0.5em;
+    font-size: inherit;
+    z-index: 10;
+    display: block;
+    width: 80%;
+    color: #E3E3E3;
+}
+.header__center__searchbar::placeholder {
+    color: #E3E3E3;
+}
+
+.header__bottom {
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 1px 2px #f1f1f1;
+}
+
+.header__bottom__inner {
+    margin: 0 auto;
+    max-width: max-content;
+    gap: 3em;
+}
+
+.header__bottom__dropdown {
+    position: relative;
+}
+
+.header__bottom__dropdown_label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.75em 0.75em;
+    cursor: pointer;
+}
+
+.header__bottom__dropdown_label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-25%);
+    border: 0.4em solid transparent;
+    border-top-color: black;
+}
+
+.header__bottom__dropdown_content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    list-style: none;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 4px #f1f1f1;
+    display: none;
+}
+
+.header__bottom__dropdown_content.active {
+    display: block;
+}
+
+.header__bottom__dropdown_content a {
+    display: block;
+    padding: 0.5em 1.5em;
+    color: #404960;
+    text-decoration: none;
+    background-color: white;
+}
+
+.header__bottom__dropdown_content a:hover {
+    background-color: #404960;
+    color: white;
+}
+.mobile_menu_icon {
+    display: none;
+}
+
+.header__center__cart_icon {
+    position: relative;
+}
+.header__center__cart_icon sup {
+    position: absolute;
+    background-color: #D68B45;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 0.2em;
+    height: 1.5em;
+    width: 1.5em;
+    bottom: 70%;
+    right: -0.75em;
+}
+@media screen and (width < 48em) {
+    .hide_on_mobile,
+    .header__bottom {
+        display: none;
+    }
+    .mobile_menu_icon {
+        display: block;
+        width: 2em;
+    }
+    .header__top {
+        justify-content: end;
+    }
+    .header__center {
+        padding: 0 0.5em;
+    }
+    .header_logo>img {
+        width: 4em;
+        padding-top: 0.5em;
+    }
+}
