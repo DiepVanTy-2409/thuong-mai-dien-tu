@@ -4,3 +4,5 @@
 3. Quản lý sản phẩm - ql người dùng - ql đơn hàng - ql chi tiết đơn hàng ==> quỳnh
 4. Chỉnh sửa trang cá nhân - upload sp - edit sp ==> thư
 5. Trang chủ - đăng ký & đăng nhập - thống kê ==> tý
+
+Thu ne
