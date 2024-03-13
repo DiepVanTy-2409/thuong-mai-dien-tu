@@ -1,0 +1,146 @@
+.edit_user{
+     margin-top: 180px; 
+    /* margin-top: 200px; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex; /* Sử dụng Flexbox */
+    align-items: stretch; /* Căn chiều cao của con phù hợp với cha */
+}
+.edit_user .nav_user {
+    width: 20%;
+    /* height: 100%; */
+    float: left;
+    background-color: #F4F4F4;
+    padding: 30px 16px;
+}
+
+.edit_user .nav_user .header_personal_page{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.edit_user ul{
+    margin-top: 20px;
+}
+
+.edit_user li{
+    list-style: none;
+    font-weight: 700;
+    
+}
+.edit_user a {
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+
+}
+
+.edit_user a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.header_personal_list_color a{
+    color: #003C75 !important;
+    
+}
+
+
+.edit_user .infor_user{
+    float: left;
+    width: 80%;
+    padding: 20px 100px;
+    
+    
+}
+
+.infor_user .personal_infor{
+    
+}
+
+.infor_user .input_infor {
+    margin-top: 20px;
+    
+}
+
+.input_infor label{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 550;
+    color: #434242;
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    
+}
+.input_infor input{
+    /* display: inline-block; */
+    width: 85%;
+    min-height: 46px;
+    border: #CDCDCD solid 1px ;
+    padding: 0px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+/* .infor_user .change_password{
+    margin-top: 20px ;
+} */
+
+.change_password .change_password_text{
+    margin-top: 60px ;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.delivery_address .delivery_add_text{
+    margin-top: 60px ;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* .delivery_address .add_address_btn{
+    margin-bottom: 30px;
+    height: 40px;
+}
+.add_address_btn .add_address{
+    display: inline-block;
+    float: left;
+    width: 42px;
+    line-height: 40px;
+    background: #FFFFFFFF;
+    margin-right: 12px;
+}
+
+.add_address_btn .add_address_text{
+    line-height: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+    
+} */
+.select-group{
+    margin-top: 30px;
+}
+
+.select-group .select-menu{
+    margin-right: 0px;
+}
+
+.update{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.update-btn{
+    display: block;
+    width: 200px;
+    height: 48px;
+    text-transform:uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFFFF;
+    background: #000000;
+}
+
+.update-btn:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,52 @@
+.drag-area {
+    position: relative; /* Thêm thuộc tính position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-button {
+    position: absolute; /* Thêm thuộc tính position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 30px;
+    border: solid #D1D3D6 0.5px;
+    background-color: #ffff;
+    border-radius: 7px;
+    color: #40624E;
+    box-shadow: 1px 1px 2px 1px #D1D3D6;
+    display: none;
+}
+.drag-area img {
+    transition: opacity 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+    position: relative;
+}
+
+.drag-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Màu đen với độ trong suốt */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.drag-area:hover::before {
+    opacity: 1;
+}
+
+.drag-area:hover img {
+    filter: brightness(60%); /* Khôi phục độ sáng ban đầu của hình ảnh */
+}
+
+.drag-area:hover .edit-button {
+    display: inline-block;
+}
+
