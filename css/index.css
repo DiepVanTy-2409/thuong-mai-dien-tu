@@ -2,9 +2,15 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 .red-text {
     color: #E80C27;
 }
+
+.justify-text {
+    text-align: justify;
+}
+
 .banner {
     width: 100%;
     overflow: hidden;
@@ -65,31 +71,35 @@ a {
     border-radius: 0.5em;
     position: relative;
 }
+
 .room_card img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 .room_card span {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
     color: #404960;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: block;
     padding: 0.5em 1em;
     font-weight: bold;
     border-radius: 0.5em;
 }
+
 .promotion_products__header {
     --padding: 3em;
     position: relative;
-    padding-inline: var(--padding) ;
+    padding-inline: var(--padding);
     display: flex;
     gap: 1em;
     align-items: center;
 }
+
 .promotion_products__header::after {
     position: absolute;
     content: '';
@@ -98,10 +108,12 @@ a {
     width: calc(100% - calc(var(--padding) * 2));
     border-bottom: 1px solid rgba(84, 84, 84, 0.3);
 }
+
 .promotion_products__header h2 {
     border-bottom: 2px solid #545454;
     padding: 0.5em 0;
 }
+
 body {
     padding-bottom: 2em;
 }
@@ -115,6 +127,7 @@ body {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
 .promotional_products__card {
     display: flex;
     flex-direction: column;
@@ -124,13 +137,16 @@ body {
     width: max-content;
     border: 1px solid transparent;
 }
+
 .promotional_products__card * {
     transition: 0.5s;
 }
+
 .promotional_products__card:hover *,
 .promotional_products__card:hover .second_image {
-    opacity: 1 ;
-} 
+    opacity: 1;
+}
+
 .promotional_products__card:hover {
     border: 1px solid #ccc;
     box-shadow: 0 2px 10px #f1f1f1;
@@ -145,6 +161,7 @@ body {
     width: 15em;
     overflow: hidden;
 }
+
 .promotional_products__card_images img {
     position: absolute;
     height: 100%;
@@ -152,9 +169,11 @@ body {
     object-fit: cover;
     z-index: 5;
 }
+
 .promotional_products__card .second_image {
     opacity: 0;
 }
+
 .promotional_products__card__sale {
     position: absolute;
     display: block;
@@ -169,6 +188,7 @@ body {
     top: 0;
     right: 0;
 }
+
 .promotional_products__card__footer {
     display: flex;
     flex-direction: column;
@@ -176,26 +196,32 @@ body {
     line-height: 1.3;
     margin-top: 1em;
 }
+
 .promotional_products__card__price {
     display: flex;
     gap: 1em;
 }
+
 .promotional_products__card__buttons {
     display: flex;
     gap: 1em;
     margin-top: 0.5em;
     opacity: 0;
 }
+
 .promotional_products__card__buttons .primary-button {
     min-width: 8em;
 }
+
 .primary-button {
     font-weight: bold;
     border: 1px solid;
     display: inline-block;
     padding: 0.5em 1em;
     text-align: center;
+    background-color: white;
 }
+
 .primary-button.active {
     color: white;
     background-color: black;
@@ -208,19 +234,23 @@ body {
     gap: 1em;
     padding: 2em;
 }
+
 .funiture_types .large-item {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
+
 .funiture_types a {
     overflow: hidden;
     position: relative;
 }
+
 .funiture_types a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .funiture_types a span {
     position: absolute;
     top: 50%;
@@ -232,21 +262,23 @@ body {
     text-align: center;
 }
 
-.outstanding_products {
+.outstanding_products {}
 
-}
-.outstanding_products__item{
+.outstanding_products__item {
     display: none;
 }
+
 .outstanding_products__item.active {
     display: flex;
 }
+
 .outstanding_products_bars {
     display: flex;
     margin-top: 1em;
     gap: 1em;
     justify-content: center;
 }
+
 .outstanding_products_bar {
     height: 2.5em;
     width: 3em;
@@ -255,14 +287,167 @@ body {
     cursor: pointer;
     border-block: 1em solid white;
 }
+
 .outstanding_products_bar.active {
     background-color: #B69352;
 }
+
+.introduce {
+    display: flex;
+    padding-inline: 2em;
+    gap: 2em;
+}
+
+.introduce:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.introduce__image {
+    flex: 1;
+    height: 25em;
+    overflow: hidden;
+}
+
+.introduce__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduce__text {
+    flex: 1;
+    padding-block: 1em;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.introduce__button {
+    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    color: #404960;
+    border: 1px solid currentColor;
+    background-color: rgba(217, 217, 217, 0.29);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.about_us {
+    overflow: hidden;
+}
+
+.about_us h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
+}
+
+.about_us__slides {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.about_us__slide {
+    height: max-content;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.about_us__slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.support {
+    display: flex;
+    background-color: rgba(246, 247, 248, 0.72);
+}
+
+.support__heading h4 {
+    color: #404960;
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+}
+
+.support__form {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+    column-gap: 2em;
+    row-gap: 1.5em;
+    align-content: center;
+}
+
+.support__form input[type="text"] {
+    line-height: 1.5;
+    padding: 0.5em;
+}
+
+.support__form * {
+    height: max-content;
+}
+
+.support__email,
+.support__content,
+.support__heading {
+    grid-column: 1 / span 2;
+}
+
+.support__image {
+    flex: 1;
+}
+
+.support input[type="file"] {
+    width: max-content;
+}
+
+.support button {
+    padding: 0.5em;
+    cursor: pointer;
+    box-shadow: 0 1px 10px #0000002a;
+}
+
+.support .primary-button {
+    justify-self: right;
+    padding: 1em;
+}
+
+.support__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 @media screen and (width < 45em) {
     :root {
         font-size: 0.9rem;
     }
+
     .banner__slides {
         padding-top: 7em;
+    }
+
+    .introduce {
+        flex-direction: column;
+    }
+
+    .introduce:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .support .support__image {
+        display: none;
     }
 }

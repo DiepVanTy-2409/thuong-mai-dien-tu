@@ -50,3 +50,19 @@ function initOutstandingProductsSlides() {
     }, 2000)
 }
 initOutstandingProductsSlides()
+
+function initAboutSlider() {
+    const slidesContainer = document.querySelector('.about_us__slides');
+    const slides = document.querySelectorAll('.about_us__slide');
+    let currentIndex = 0;
+    setInterval(() => {
+        slidesContainer.append(slides[currentIndex % 2 == 0 ? 0 : 1].cloneNode(true));
+        currentIndex++
+        slidesContainer.style.transform = `translateX(${currentIndex * -100}%)`;
+    }, 3000)
+
+}
+initAboutSlider()
+
+document.querySelector('.support__select-file-button')
+    .addEventListener('click', e => e.target.parentElement.querySelector('.support__select-file').click())
