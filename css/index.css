@@ -2,7 +2,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .red-text {
     color: #E80C27;
 }
@@ -114,9 +118,6 @@ a {
     padding: 0.5em 0;
 }
 
-body {
-    padding-bottom: 2em;
-}
 
 .promotional_products__cards {
     padding: 1em;
@@ -262,7 +263,6 @@ body {
     text-align: center;
 }
 
-.outstanding_products {}
 
 .outstanding_products__item {
     display: none;
@@ -428,7 +428,11 @@ body {
     width: 100%;
     object-fit: cover;
 }
-
+.full-width-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 @media screen and (width < 45em) {
     :root {
@@ -450,4 +454,98 @@ body {
     .support .support__image {
         display: none;
     }
+}
+
+
+/* Message */
+.message {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    z-index: 200;
+}
+.message__area {
+    position: relative;
+}
+
+.message__button {
+    background-color: #404960;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message__box {
+    position: absolute;
+    bottom: 50%;
+    right: 110%;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid #747474;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+.message__header {
+    padding: 0.75em 0.5em ;
+    background-color: #404960;
+    color: white;
+    font-weight: bold;
+}
+.message__messages {
+    padding: 0.5em ;
+    height: 20em;
+    width: 18em;
+    max-width: 100%;
+    display: grid;
+    align-content: start;
+    gap: 0.5em;
+    overflow: auto;
+}
+.message__messages::-webkit-scrollbar {
+    width: 2px;
+}
+.message__messages::-webkit-scrollbar-thumb {
+    background-color: #404960;
+}
+.message__message {
+    width: max-content;
+    max-width: 13em;
+}
+.message__text {
+    max-width:100%;
+    padding: 0.5em;
+}
+.my_message {
+    justify-self: right;
+}
+.other_message .message__text {
+    background-color: white;
+    border-radius: 0.5em 0 .5em 0;
+}
+.my_message .message__text {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 0 0.5em 0 .5em ;
+}
+.message__type {
+    padding: 0.5em ;
+    background-color: white;
+}
+.message__type button{
+    border: none;
+    background-color: #404960;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+}
+.message__type input {
+    border: none;
+    display: block;
+    flex: 1;
+    font-size: inherit;
+    padding: 0.5em;
+}
+.message__type input:focus {
+    outline: none;
 }
