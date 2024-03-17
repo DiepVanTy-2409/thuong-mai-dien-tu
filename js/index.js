@@ -21,10 +21,10 @@ function initOutstandingProductsSlides() {
 
     const __slide = () => {
         const bars = barContainer.querySelectorAll('.outstanding_products_bar')
-        
+
         slides.forEach(s => s.classList.remove('active'))
         bars?.forEach(bar => bar.classList.remove('active'))
-        
+
         slides[currentIndex].classList.add('active')
         bars[currentIndex]?.classList.add('active')
     }
@@ -66,3 +66,5 @@ initAboutSlider()
 
 document.querySelector('.support__select-file-button')
     .addEventListener('click', e => e.target.parentElement.querySelector('.support__select-file').click())
+
+

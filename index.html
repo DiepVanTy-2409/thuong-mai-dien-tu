@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/chat.css">
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                     </span>
                     <span class="hide_on_mobile">Giỏ
                         hàng</span></button>
-                <button class="flex gap--small"> <img class="image_icon" src="./images/header_account_icon.png" alt="">
+                <button class="flex gap--small open_login_form_btn"> <img class="image_icon" src="./images/header_account_icon.png" alt="">
                     <span class="hide_on_mobile">Đăng nhập</span></button>
                 <button><img class="mobile_menu_icon" src="./images/header_menu_icon.png" alt=""></button>
             </div>
@@ -591,27 +592,18 @@
         <section>
             <img class="full-width-image" src="./images/image 48.png" alt="">
         </section>
+
+        <!-- Chat: start -->
         <div class="message">
             <div class="message__area">
                 <div class="message__button">
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M8 18L10.29 20.29C10.514 20.5156 10.7804 20.6946 11.0739 20.8168C11.3674 20.9389 11.6821 21.0018 12 21.0018C12.3179 21.0018 12.6326 20.9389 12.9261 20.8168C13.2196 20.6946 13.486 20.5156 13.71 20.29L16 18H18C19.0609 18 20.0783 17.5786 20.8284 16.8285C21.5786 16.0783 22 15.0609 22 14V7C22 5.93913 21.5786 4.92178 20.8284 4.17163C20.0783 3.42149 19.0609 3 18 3H6C4.93913 3 3.92172 3.42149 3.17157 4.17163C2.42142 4.92178 2 5.93913 2 7V14C2 15.0609 2.42142 16.0783 3.17157 16.8285C3.92172 17.5786 4.93913 18 6 18H8Z"
-                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path d="M17 9H7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
-                            <path d="M13 12H7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
-                        </g>
-                    </svg>
+                    <img class="message__button_msg_icon" src="./images/message_icon.svg" alt="">
+                    <img class="message__button_close_icon" src="./images/close_icon.svg" alt="">
                 </div>
                 <div class="message__box">
-                    <div class="message__header">
-                        Chat với T&T
+                    <div class="message__header flex">
+                        <span>Chat với T&T</span>
+                        <img class="message__header__close_icon" src="./images/close_icon.svg" alt="">
                     </div>
                     <div class="message__messages">
                         <div class="message__message other_message">
@@ -619,7 +611,9 @@
                         </div>
 
                         <div class="message__message other_message">
-                            <p class="message__text ">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+                            <p class="message__text ">The CSS Grid Layout Module offers a grid-based layout system, with
+                                rows and columns, making it easier to design web pages without having to use floats and
+                                positioning.
                             </p>
                         </div>
 
@@ -628,18 +622,45 @@
                         </div>
 
                         <div class="message__message my_message">
-                            <p class="message__text ">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+                            <p class="message__text ">The CSS Grid Layout Module offers a grid-based layout system, with
+                                rows and columns, making it easier to design web pages without having to use floats and
+                                positioning.
                             </p>
                         </div>
 
                     </div>
                     <form class="message__type flex">
-                        <input placeholder="Soạn tin nhắn..." type="text" name="" id="">
+                        <input id="__message_input" placeholder="Soạn tin nhắn..." type="text" name="" id="">
                         <button class="flex-center"><img width="20px" src="./images/send_icon.svg" alt=""></button>
                     </form>
                 </div>
             </div>
         </div>
+        <!-- Chat: end -->
+
+        <!-- login: start -->
+        <form class="login_form">
+            <div class="login_form__header">
+                <h5>ĐĂNG NHẬP TÀI KHOẢN</h5>
+                <img class="login_form__close_icon" src="./images/gray_close_icon.svg" alt="">
+            </div>
+            <input class="login_form__input" type="email" placeholder="Email">
+            <div class="login_form__input_with_icon">
+                <input class="login__password" type="password" placeholder="Mật khẩu">
+                <img src="./images/slash._eye_icon.svg" alt="">
+            </div>
+            <div class="flex login_form__foget_pass_n_save">
+                <div class="flex">
+                    <input type="checkbox" name="" id="is_save">
+                    <label for="is_save">Lưu thông tin đăng nhập</label>
+                </div>
+                <a href="#">Quên mật khẩu</a>
+            </div>
+            <button class="login__submit_button" type="submit">ĐĂNG NHẬP</button>
+            <p>Khách hàng mới? <a href="#" class="red-text bold">Tạo tài khoản</a></p>
+        </form>
+        <div class="blur_overlay"></div>
+        <!-- login: end -->
     </main>
 
     <footer class="footer">
@@ -744,6 +765,7 @@
     </footer>
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/chat.js"></script>
 </body>
 
 </html>
