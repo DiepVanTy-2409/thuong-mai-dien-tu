@@ -1,0 +1,240 @@
+.header {
+    position: sticky !important;
+    z-index: 99;
+}
+
+.flex {
+    display: flex;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner>img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* height: 100%; */
+    width: 100%;
+}
+
+.tenBanner {
+    position: absolute;
+    z-index: 10;
+    bottom: 1em;
+    left: 2em;
+}
+
+.tenBanner>p:first-child {
+    font-size: 2em;
+    color: white;
+}
+
+.supperLink {
+    margin-top: 2em;
+}
+
+.supperLink>p:not(:last-child) {
+    font-size: 1.5em;
+    color: white;
+}
+
+.supperLink>p:nth-child(2) {
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+
+.supperLink>p:nth-child(4) {
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+
+.soLuongSanPham {
+    text-align: center;
+    margin-top: 0.5em;
+    line-height: 1.5em;
+    color: rgb(164, 107, 37);
+}
+
+.phanChinh {
+    width: 100%;
+    margin-top: 3em;
+    /* background-color: rgb(17, 120, 210); */
+    /* height: 100px; */
+}
+
+.sort {
+    width: 100%;
+    margin: 3em 0;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: right;
+}
+
+.nayKhognXai {
+    margin-top: 2em;
+    display: flex;
+}
+
+.chonMuc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    /* background-color: antiquewhite; */
+}
+.tongDnhSach{
+    flex: 2;
+}
+.danhSach {
+    /* flex: 2; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+/* drop down */
+.btnDropDown {
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    border-radius: 1em;
+    display: flex;
+    width: 100%;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+
+.arrow {
+    /* width: 2em;
+    height: 1.5em; */
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.6em solid #000000;
+    margin-left: 1.5em;
+    transition: transform ease-in-out 0.5s;
+}
+.cacDanhMuc{
+    display: none;
+    transition: transform ease-in-out 0.5;
+}
+.danhMuc ul li a, .nhaCungCapS li{
+    display: block;
+    padding: 0.7em 0.5em;
+    color: #000000;
+    margin: 0.1em 0.2em;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+.danhMuc ul li{
+    margin-top: 1em;
+    list-style-type: none;
+}
+.danhMuc li {
+    transition: transform 0.5s ease-in-out;
+}
+.danhMuc{
+    width: 60%;
+}
+.nhaCungCap{
+    margin-top: 3em;
+}
+.nhaCungCapS li input{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+.sort > button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 1.5em;
+    border-radius: 0.6em;
+    font-size: 1.5em;
+    position: relative;
+}
+.sort > button > .arrowMini{
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.6em solid #000000;
+    margin-left: 1.5em;
+    transition: transform ease-in-out 0.5s;
+}
+.sort button p{
+    width: 10em;
+    text-align: left;
+}
+.sort > button > i{
+    margin-right: 0.5em;
+}
+.sort > button{
+    margin-right: 4em;
+}
+.cacCachXepNe{
+    position: absolute;
+    top: 3em;
+    z-index: 10;
+    background-color: aliceblue;
+    border: 1px solid black;
+    right: 0;
+    border-radius: 0.5em;
+}
+.cacCachXepNe ul li{
+    display: flex;
+    list-style-type: none;
+    text-align: left;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.cacCachXepNe ul >li:first-child{
+    border-radius: 0.5em 0.5em 0 0;
+}
+.cacCachXepNe ul >li:last-child{
+    border-radius: 0 0 0.5em 0.5em;
+}
+.cacCachXepNe >ul > li:hover{
+    background-color: rgb(241, 170, 170);
+}
+.cacCachXepNe ul li:not(:first-child){
+    border-top: 1px solid black;
+}
+.hide{
+    visibility: hidden;
+}
+.cacCachXepNe >ul >li >i{
+    margin-right: 1em;
+}
+.selected{
+    color: red;
+}
+.chiaTrang{
+    margin: 4em 2em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.chiaTrang p{
+    font-size: 2.5em;
+    text-align: center;
+}
+.chiaTrang i{
+    font-size: 5em;
+    cursor: pointer;
+}
+.chiaTrang i:first-child{
+    margin-right: 1em;
+}
+.chiaTrang i:last-child{
+    margin-left: 1em;
+}
+.chiaTrang i:hover{
+    color: rgb(168, 82, 82);
+}

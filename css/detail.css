@@ -1,0 +1,551 @@
+.header{
+    position: sticky !important;
+    z-index: 99;
+}
+main{
+    margin-top: 1em;
+    /* margin-left: 2em; */
+}
+.linkProd{
+    cursor: pointer;
+    color: #747474;
+}
+
+.red{
+    background-color: rgb(192, 139, 139);
+}  
+
+.blue{
+    background-color: blue;
+}
+.thongTinSanPham{
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.flex_1{
+    flex: 1;
+}
+.flex_2{
+    flex: 2;
+}
+.flex_3{
+    flex: 3;
+}
+.flex_4{
+    flex: 4;
+}
+.flex_5{
+    flex: 5;
+}
+.no-select {
+    -webkit-touch-callout: none; /* Safari */
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.images{
+    display: flex;
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+
+.listImage{
+    flex: 1;
+}
+.showImage{
+    display: flex;
+    position: relative;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 0.5em;
+}
+
+.showImage img{
+    display: block;
+    width: 100%;
+}
+
+.listImage img{
+    display: block;
+    width: 100%;
+}
+.listImage :nth-child(n+2){
+    margin-top: 0.5em;
+}
+.scrollImage{
+    width: 100%;
+    height: 20em;
+    /* overflow: hidden; */
+    overflow-y: auto;
+}
+
+.border_2px{
+    border: 2px solid #545454; 
+    overflow: hidden;
+}
+
+.sale{
+    position: absolute;
+    background-color: red;
+    border-radius: 0 0 0 10px;
+    color: white;
+    padding: 0.2em;
+    top: 0px;
+    right: 0em;
+}
+
+.button-hide{
+    position: absolute;
+    display: flex;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 2em;
+    justify-content: center; 
+    align-items: center; 
+}
+.icon_button{
+    cursor: pointer;
+    display: none;
+    /* background-color: aliceblue; */
+    border-radius: 5px;
+    width: 2em;
+    height: 2em;
+}
+
+.showImage:hover .icon_button{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid rgb(160, 160, 160);
+}
+
+.button-back{
+    left: 1em;
+}
+.button-next{
+    right: 1em;
+}
+
+.infoPrd{
+    margin: 0.2em 0.2em 0.2em 2em;
+}
+
+.tenSanPham{
+    /* margin: 0.1em; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.thongTin{
+    display: flex;
+    margin-top: 1.5em;
+    /* justify-content: space-between; */
+}
+.lable{
+    margin-right: 0.5em;
+}
+
+.statusSanPham, .idSanPham{
+    color: red;
+}
+.tinhTrangSanPham{
+    margin-left: 2em;
+}
+
+.blockGia{
+    width: 90%;
+    background-color: rgb(217, 217, 217, 0.46);
+    margin: 0.3em;
+    padding: 0.8em 0.5em 0.8em 0.5em;
+    border-radius: 5px;
+}
+.giaSanPham{
+    margin-left: 0.5em;
+    color: #E80C27;
+}
+.readGia{
+    text-align: center;
+    color: #747474;
+}
+.soLuong{
+    width: 100%;
+    margin-top: 1em;
+}
+.chinhSoLuong{
+    margin-left: 1em;
+}
+
+.block{
+    cursor: pointer;
+    display: block;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #D9D9D9;
+    text-align: center;
+    line-height: 2em;
+}
+
+.buttonThemMua{
+    /* justify-content: space-between; */
+    padding: 0.5em 1em 0 1em;
+}
+.buttonThemMua button{
+    padding: 0.5em 1em 0.5em 1em;
+}
+.muaNgay{
+    background-color: black;
+    color: white;
+}
+
+.themGio{
+    margin-left: 4em;
+    background-color: white;
+}
+
+.lienHe{
+    margin-top: 0.5em;
+}
+
+.phoneNumber{
+    color: red;
+    margin-left: 0.5em;
+}
+.share{
+    margin-top: 1em;
+}
+.iconShare{
+    margin-left: 1em;
+}
+.iconBaoHanh{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: red;
+    line-height: 1.5em;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.baoHanh{
+    margin-top: 1em;
+}
+.baoHanh :nth-child(2){
+    margin-left: 1em;
+}
+.baoHanh :nth-child(3){
+    margin-left: 0.5em;
+}
+.hoTro > img{
+    width: 1.5em;
+}
+.hoTro > p{
+    width: 70%;
+    margin-left: 1em;
+}
+.sanPhamLienQuan{
+    width: 70%;
+    border: 1px solid #D9D9D9;
+    margin-left: 15%;
+    margin-top: 4em;
+}
+.sanPhamLienQuan > p{
+    font-size: 1.9em;
+    text-align: center;
+    margin-top: 0.5em;
+}
+.sanPhamLienQuan > li{
+    margin-bottom: 2em;
+    margin-left: 1.5em;
+}
+.sanPhamLienQuan :nth-child(2){
+    margin-top: 1.5em;
+}
+
+.sanPhamLienQuan > li > a{
+    font-style: italic;
+    color: #003C75;
+    font-size: 1.5em;
+}
+.moTaDanhGia{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4em;  
+    position: relative; 
+    /* height: 1px; */
+}
+.tieuDe{
+    font-size: 2em;
+}
+.gachChan{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-style: solid;
+}
+
+.tieuDe :nth-child(n+2){
+    margin-left: 2em;
+    /* color: black; */
+}
+.doiMau{
+    color: #545454; 
+}
+.blockChungNe{
+    position: absolute;
+    width: 100%;
+    margin-top: 2em;
+    font-size: 1.8em;
+}
+
+.blockMoTa{
+    /* height: 100px; */
+    /* background-color: #003C75; */
+    font-size: 1.5em;
+}
+.gioiThieu{
+    margin-left: 1.5em;
+}
+.ten > p, .thuocTinh > p{
+    margin-bottom: 0.2em;
+}
+.blockDanhGia{
+    /* height: 100px; */
+    /* background-color: #757100; */
+    color: black;
+    /* margin-left: 5%; */
+}
+.lineMoTa{
+    width: 100%;
+    /* margin-left: 5%; */
+    margin-top: 2em;
+    height: 4px;
+    background-color: #C8C8C8;
+}
+.huongDanSuDung{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.huongDan{
+    list-style-type: "- ";
+    margin-left: 1em;
+}
+.danhGiaSao{
+    height: 100%;
+}
+.giaTriSao, .satrIcon, .nhanXet{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.giaTriSao :nth-child(n+1){
+    font-size: 2em;
+    color: #003C75;
+}
+.satrIcon{
+    margin-top: 0.5em;
+}
+.nhanXet{
+    margin-top: 0.3em;
+}
+.keDoc{
+    width: 2px;
+    background-color: #9f9f9f;
+}
+.bieuDo{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5em 0 0.5em;
+}
+.bieuDo p:first-child{
+    margin-right: 0.4em;
+    width: 0.5em;
+}
+.phanChia{
+    margin: 0 0.2em 0 0.2em;
+}
+.soLuongDanhGia{
+    margin-right: 0.2em;
+}
+.thanhBieuDo{
+    position: relative;
+    height: 1em;
+}
+.full100, .giaTriBieuDoPhanTram{
+    position: absolute;
+    height: 0.5em;
+    margin-top: 0.25em;
+    margin-left: 2.5%;
+    border-radius: 10px;
+}
+.full100{
+    width: 95%;
+    background-color: #9f9f9f;
+}
+.giaTriBieuDoPhanTram{
+    background-color: #003C75;
+}
+.giaTriPhanTramDanhGia{
+    width: 1.5em;
+    text-align: right;
+}
+.giaTriPhanTramDanhGia ~ p:first-child{
+    margin-left: 0.4em;
+}
+.soLuongDanhGia{
+    width: 2em;
+    text-align: right;
+}
+.nhanXetLoi{
+    margin: 0 1em 0 1em;
+    text-align: center;
+}
+.nhanXetLoi > button{
+    padding: 0.5em;
+    margin-top: 1em;
+    background-color: #003C75;
+    color: white;
+}
+.lineDanhGia{
+    width: 94%;
+    /* margin-left: 5%; */
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 3%;
+    height: 4px;
+    background-color: #C8C8C8;
+}
+.formGuiDanhGia{
+    width: 94%;
+    margin-left: 3%;
+}
+.formGuiDanhGia div:first-child{
+    margin: 1em 0 1em 0;
+}
+.inputText{
+    width: 100%;
+    height: 10em;
+    border: 4px solid black;
+    border-radius: 20px;
+    font-size: 1.2em;
+    border-bottom-right-radius: 0;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
+    padding: 0.5em;
+}
+.inputText :focus-visible :focus{
+    outline: #003C75;
+}
+.boxInfo{
+    width: 100%;
+    justify-content: space-between;
+}
+.boxInfo div:first-child p{
+    margin-right: 0.5em;
+}
+.boxInfo div:first-child i{
+    margin-left: 0.2em;
+}
+.boxInfo input{
+    font-size: 0.6em;
+    padding: 0.7em 1.3em 0.7em 1.3em;
+}
+.buttonGuiDanhGia{
+    padding: 0.2em 1em 0.2em 1em;
+    background-color: #003C75;
+    color: white;
+}
+.saoCoMau{
+    color: red;
+}
+.guiDanhGia:focus .formGuiDanhGia{
+    display: block;
+}
+.cacSanPhamLienquan{
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: #003C75; */
+}
+.cacSanPhamLienquan, .cacSanPhamDaXem{
+    margin-left: 10%;
+    width: 80%;
+}
+.tieuDeLienQuan{
+    font-size: 2em;
+}
+.cacSanPhamNe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.sanPham{
+    margin-top: 1em;
+    text-align: center; 
+    padding: 1em;
+}
+.sanPham:hover{
+    padding: calc(1em - 2px);
+    border: 2px solid #000000;
+    border-radius: 0.5em;
+}
+.tenSanPhamNe{
+    margin-top: 2em;
+    font-size: 1.5em;
+} 
+.anh{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.anh > .sale{
+    font-size: 1.5em;
+}
+.anh > img{
+    /* justify-content: center; */
+    width: 30em;
+    height: 30em;
+}
+.gia{
+    justify-content: space-evenly;
+    margin-top: 1.5em;
+    /* margin: 2em 3em 0 3em; */
+}
+.gia :nth-child(n){
+    font-size: 1.7em;
+}
+.giaDuocGiam{
+    color: red;
+}
+.nutBam{
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    justify-content: space-evenly;
+    font-size: 1.7em;
+}
+.nutBam > button{
+    padding: 0.5em 1em 0.5em 1em;
+}
+.nutBam > button:first-child{
+    background-color: white;
+}
+.nutBam >button:last-child{
+    background-color: black;
+    color: white
+}
+.cacSanPhamDaXem{
+    margin-top: 4em;
+}
+.test{
+    height: 10200px;
+    /* background-color: #9f9f9f; */
+    /* position: absolute; */
+    width: 100%;
+    /* top: -100px */
+}
