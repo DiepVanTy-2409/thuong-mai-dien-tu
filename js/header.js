@@ -28,7 +28,7 @@ document.querySelector('.search_icon_button').addEventListener('click', e => {
 function initLoginForm() {
     console.log('NEED TO UPDATE THE PATH FOR IMAGE ELEMENT!!')
     const form = document.querySelector('.login_form')
-    const bg = document.querySelector('.blur_overlay')
+    const bg = document.querySelector('.blur_overlay.login')
     const passwordInput = form.querySelector('.login__password')
     const eyeIcon = document.querySelector('.login_form__input_with_icon img')
 
@@ -48,7 +48,26 @@ function initLoginForm() {
 
     eyeIcon.addEventListener('click', e => {
         eyeIcon.src = String(eyeIcon.src).includes('slash') ? '../images/eye_icon.svg' : '../images/slash._eye_icon.svg'
-        passwordInput.type = passwordInput.type === 'password'? 'text' : 'password'
+        passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password'
     })
 }
+
+function initCartPreviewer() {
+    const bg = document.querySelector('.blur_overlay.cart')
+    document.querySelector('.header__cart_button')
+        .addEventListener('click', e => {
+            document.querySelector('.cart_previewer').classList.add('active')
+            bg.classList.add('active')
+        })
+
+    function handleClose() {
+        document.querySelector('.cart_previewer').classList.remove('active')
+        bg.classList.remove('active')
+    }
+    bg.addEventListener('click', handleClose)    
+    document.querySelector('.cart_previewer__close_btn img').addEventListener('click', handleClose)
+}
+
+
 initLoginForm()
+initCartPreviewer()

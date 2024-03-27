@@ -6,7 +6,9 @@
     font-style: normal;
     --z-index-header: 100;
     --z-index-chatbox: 150;
-    --z-index-auth-form: 200;
+    --z-index-overlay: 160;
+    --z-index-cart: 200;
+    --z-index-auth-form: 300;
 }
 
 * {

@@ -43,7 +43,7 @@
             <div class="header__center__right  flex gap--medium">
                 <button class="search_icon_button"><img class="image_icon" src="./images/header_search_icon.png"
                         alt=""></button>
-                <button class="flex gap--small">
+                <button class="flex gap--small header__cart_button">
                     <span class="header__center__cart_icon">
                         <img class="image_icon" src="./images/header_cart_icon.png" alt="">
                         <sup>5</sup>
@@ -659,8 +659,47 @@
             <button class="login__submit_button" type="submit">ĐĂNG NHẬP</button>
             <p>Khách hàng mới? <a href="#" class="red-text bold">Tạo tài khoản</a></p>
         </form>
-        <div class="blur_overlay"></div>
+        <div class="blur_overlay login"></div>
         <!-- login: end -->
+        <!-- preview cart: start -->
+        <div class="cart_previewer">
+            <div class="cart_previewer__close_btn">
+                <img src="./images/gray_close_icon.svg" alt="">
+            </div>
+            <h3>GIỎ HÀNG</h3>
+            <div class="cart_previewer__products">
+                <div class="cart_previewer__product">
+                    <div class="cart_previewer__product_img">
+                        <img src="./images/image 27.png" alt="">
+                    </div>
+                    <div class="cart_previewer__product_info">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <span class="cart_previewer__product_price">2 x 2,078,000 đ</span>
+                        <div class="cart_previewer__remove_btn">
+                            <img src="./images/gray_close_icon.svg" width="10px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_previewer__product">
+                    <div class="cart_previewer__product_img">
+                        <img src="./images/image 27.png" alt="">
+                    </div>
+                    <div class="cart_previewer__product_info">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <span class="cart_previewer__product_price">2 x 2,078,000 đ</span>
+                        <div class="cart_previewer__remove_btn">
+                            <img src="./images/gray_close_icon.svg" width="10px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="cart_previewer__total_price">Thành tiền: <span>10, 380,999 đ</span></p>
+            <a href="" class="primary-button active">XEM GIỎ HÀNG</a>
+            <a href="" class="primary-button">THANH TOÁN</a>
+        </div>
+        <div class="blur_overlay cart"></div>
+        <!-- preview cart: end -->
     </main>
 
     <footer class="footer">
